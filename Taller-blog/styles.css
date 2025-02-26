@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', serif;
+    
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #585151;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+}
+
+section article{
+    background-color: white;
+}
+
+section article h2 {
+    text-align: center;
+    padding: 1rem;
+    padding-top: none;
+}
+
+section article p {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.card{
+    margin: 0 auto;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 0px #0007;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+section .card:hover {
+    box-shadow: 0px 0px 20px 1px #0007;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    width: 100%;
+    background-color: #585151;
+    padding: 2rem 0;
+}
+
+footer p {
+    color: white;
+    display: inline;
+}
+
+footer a{
+    float: right;
+    text-decoration: none;
+    padding-left: 1em;
+    color: #0aa;
+}
+
+footer a:hover {
+    color: #0fa;
+}
+
+footer a:visited {
+    color: #00a;
+}
+
