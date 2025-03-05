@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+#container div {
+    padding: 1em;
+    margin: 1em;
+    width: 100px;
+    height: 100px;
+    border-radius: 0.5rem;
+    background-color: cyan;
+    text-align: center;
+    border: 0px solid black;
+    font-size: 2rem;
+    
+}
+
+#container div:first-child {
+    background-color: red;
+    order: 1;
+}
+#container div:last-child {
+    background-color: yellowgreen;
+    order: -1;
+}
