@@ -2,7 +2,119 @@ body {
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+body::before{
+    z-index: -1;
+    position: fixed;
+    content: '';
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #347f;
+}
+
 #container {
     display: flex;
+}
+
+.concert {
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+}
+
+.concert .card{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 #000;
+    transition: 0.3s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.concert .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    z-index: 1;
+}
+
+aside::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    z-index: 1;
+}
+
+.card{
+    background-position: center;
+}
+
+
+.card .text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0;
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+
+.card .text ul{
+    list-style: none;
+    padding: 0;
+}
+
+#metro {
+    background-image: url(imagenes/metro-concierto.jpg);
+}
+#bando {
+    background-image: url(imagenes/carnaval_2.jpg);
+}
+#coronacion {
+    background-image: url(imagenes/carnaval_1.png);
+}
+#baila {
+    background-image: url(imagenes/coronacion.jpeg);
+}
+#batalla {
+    background-image: url(imagenes/carnaval_1.png);
+}
+
+aside {
+    border-radius: 0.5rem;
+    background-image: url(imagenes/jlg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 1rem;
+    
+}
+
+aside button {
+    cursor: pointer;
+    background-color: #00a;
+    color: white;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
 }
 
